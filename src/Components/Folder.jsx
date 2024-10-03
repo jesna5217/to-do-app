@@ -3,7 +3,7 @@ import './Folder.css'
 import { addToDo, deleteToDo, toggleToDo, updateToDo,initialToDo } from '../Redux/todoSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import Checkbox from '@mui/material/Checkbox';
-
+import image from "public/assets/bgp.jpg"
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 function Folder() {
     const [input,setInput]=useState('');
@@ -62,7 +62,7 @@ console.log('to do list',toDoList)
 <button onClick={handleToDoList} className='tick2'><i class="fa-solid fa-plus"></i></button>
 
     </div>
-<img src="public/assets/bgp.jpg" alt="" className='girl' />
+<img src={image} alt="" className='girl' />
 
 {
     toDoList.length>0?(
