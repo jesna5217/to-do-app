@@ -1,0 +1,134 @@
+header{
+    height: 90px;
+    width: 100%;
+    /* background-color:#113f67; */
+    background-color:#f4eeff;
+align-items: center;
+ display: flex;
+ justify-content: space-between;
+ padding:  0px 50px;
+ box-shadow: 10px 3px 10px #38598b;
+}
+.heading p{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+ color: black;
+}
+.search input{
+    background-color: transparent;
+    border: 1px solid #7b97c2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.search input::placeholder{
+    font-size: 19px;
+    color: rgb(150, 142, 132);
+}
+.search input:focus{
+    outline: none!important;
+   
+}
+.search i{
+    position: absolute;
+    color: rgb(150, 142, 132);
+    right: 3%;
+   
+}
+.sort,.house,.delete{
+    font-size: 25px;
+}
+.delete{
+    margin-right: 50px;
+   
+}
+
+.options{
+    padding: 15px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px){
+    .options{
+    background-color: transparent!important;
+    }
+    .house{
+        color: black!important;
+    }
+    header{
+        height: 60px;
+        width: 100%;
+       
+    
+     padding:  10px 20px;
+
+    }   
+    .heading p{
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+       
+    }
+    .search input{
+        width: 100px;
+    }
+    .search input::placeholder{
+        font-size: 13px;
+        color: rgb(150, 142, 132);
+    }
+    .search i{
+        position: absolute;
+        color: rgb(150, 142, 132);
+        top: 23px;
+        right: 19px;
+        font-size: 13px;
+}
+.sort,.house,.delete{
+    font-size: 17px;
+}
+.delete{
+    margin-right: 30px;
+    margin-top: 5px;
+}
+}
+@media (min-width: 600px) and (max-width: 959px){
+.options{
+    padding: 8px;
+}
+    header{
+        height: 60px;
+        width: 100%;
+       
+    
+     padding:  10px 30px;
+
+    }   
+    .heading p{
+        margin-top: 20px;
+        font-size: 23px;
+        font-weight: 700;
+       
+    }
+    .search input{
+        width: 100px;
+    }
+    .search input::placeholder{
+        font-size: 15px;
+        color: rgb(150, 142, 132);
+    }
+    .search i{
+        position: absolute;
+        color: rgb(150, 142, 132);
+        top: 23px;
+        right: 26px;
+        font-size: 13px;
+}
+.sort,.delete,.house{
+    font-size: 17px;
+}
+.delete{
+    margin-top: 5px;
+}
+
+}

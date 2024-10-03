@@ -1,0 +1,199 @@
+
+.input-column{
+   width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+  border: 2px solid rgb(51, 80, 130);
+   padding-left: 30px;
+   /* background-color: #38598b;; */
+   background-color: white;
+}
+.input-column::placeholder{
+ 
+   color: rgb(178, 185, 190);
+    font-weight: 500;
+    font-size: 17px;
+}
+.tick{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+  font-size: 25px;
+    z-index: 200;
+}
+.tick i{
+    color:  #424874;
+   
+}
+.list{
+    height: 70px;
+    width: 800px;
+    background-color:#dcd6f7; 
+   border-radius: 20px;
+    /* background-color:#38598b; */
+    margin: 40px 400px;
+  position: relative;
+  display: flex;
+justify-content: left;
+align-items: center;
+
+}
+.pink{
+    position: absolute;
+    
+
+}
+.text{
+   
+    font-size: 25px;
+    margin-top: 1px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.trash{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 2%;
+    color: rgb(172, 35, 35);
+    font-size: 18px;
+}
+
+.your{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.edit{
+    background: transparent;
+    border: none;
+    color: rgb(43, 88, 85);
+}
+.edit-input{
+    background: transparent;
+    width: 650px;
+    border-top:none ;
+   border-right:none ;
+   border-left:none ;
+}
+.edit-input:focus{
+    outline: none;
+}
+.pen{
+    position: absolute;
+    right: 10%;
+    font-size: 19px;
+}
+.text-box{
+    width: 550px;
+}
+@media only screen and (max-width: 600px){
+    .edit-input{
+        width: 180px;
+    }
+    .input-column{
+        width: 100%;
+         height: 50px;
+         
+     }
+     .input-column::placeholder{
+       
+         font-size: 14px;
+     }
+     .tick{
+         position: absolute;
+         bottom: 10px;
+         right: 5%;
+         background: transparent;
+         border: none;
+         
+         font-size: 20px;
+     }
+     .list{
+        height: auto;
+        width: 90%;
+        
+       border-radius: 5px;
+       margin: 20px 0px;
+      
+    
+    }
+    .text-box{
+        background-color: #dcd6f7;
+        width: 200px;
+    }
+    .text{
+        
+        font-size: 16px;
+        
+        margin-left: 10px;
+    }
+    .trash{
+       
+        font-size: 15px;
+    }
+  
+    .your{
+        position: absolute;
+        top: 47%;
+        font-size: 16px;
+        left: 35%;
+    }
+    .pen{
+       
+        right: 20%;
+    }
+}
+@media (min-width: 600px) and (max-width: 959px){
+    .edit-input{
+        background: transparent;
+        width: 555px;
+        border-top:none ;
+       border-right:none ;
+       border-left:none ;
+    }
+    .input-column{
+        width: 100%;
+         height: 50px;
+         
+     }
+     .text-box{
+        width: 500px;
+     }
+     .input-column::placeholder{
+       
+         font-size: 14px;
+     }
+     .tick{
+         position: absolute;
+         bottom: 10px;
+         right: 5%;
+         background: transparent;
+         border: none;
+         color: antiquewhite;
+         font-size: 13px;
+     }
+     .list{
+        height: auto;
+        width: 95%;
+        
+       border-radius: 5px;
+       margin: 20px 0px;
+      
+    
+    }
+    .text{
+        
+        font-size: 16px;
+        
+        margin-left: 10px;
+    }
+    .trash{
+       
+        font-size: 15px;
+    }
+   
+}
