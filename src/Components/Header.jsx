@@ -28,7 +28,7 @@ function Header() {
 </div>
 <div className="d-flex options" >
 <i className='fa-solid fa-trash  delete' style={{color:'rgb(172, 35, 35)'}} onClick={()=>dispatch(deleteAllToDo())}></i>
-<Link to={'/'} style={{textDecoration:'none',color:'#f4eeff'}}><i class="fa-solid fa-house house"></i></Link>
+<Link to={'/'} style={{textDecoration:'none',color:'black'}}><i class="fa-solid fa-house house"></i></Link>
 
 </div>
 
