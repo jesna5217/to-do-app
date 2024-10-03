@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Folder.css'
-import { addToDo, deleteToDo, toggleToDo, updateToDo } from '../Redux/todoSlice'
+import { addToDo, deleteToDo, toggleToDo, updateToDo,initialToDo } from '../Redux/todoSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import Checkbox from '@mui/material/Checkbox';
 
@@ -21,8 +21,6 @@ const data={
     value:input,
     completed:false
 }
-
-
     dispatch(addToDo(data));
     setInput('')
 }
@@ -38,12 +36,22 @@ console.log('to do list',toDoList)
         dispatch(updateToDo({id:id,value:editValue}));
         setEditId(null)
     }
+
+
+    useEffect(()=>{
+        const savedTodo=localStorage.getItem('todos');
+        if(savedTodo){
+           const parseTodo=JSON.parse(savedTodo);
+           dispatch(initialToDo(parseTodo))
+        }
+   
+     },[dispatch])
+       
     useEffect(()=>{
        localStorage.setItem('todos',JSON.stringify(toDoList)) 
     },[toDoList])
  console.log(toDoList);
-  
-    
+ 
   return (
     <>
 

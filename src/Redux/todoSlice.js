@@ -23,12 +23,15 @@ updateToDo:(state,action)=>{
     }
 },
 deleteAllToDo:(state)=>{
-    return state=[]
+    return state=[];
+},
+initialToDo:(state,action)=>{
+    return [...state,...action.payload]
+  
 }
  
 }
-
     
 })
 export default toDoSlice.reducer;
-export const {addToDo,deleteToDo,toggleToDo,updateToDo,deleteAllToDo}=toDoSlice.actions;
+export const {addToDo,deleteToDo,toggleToDo,updateToDo,deleteAllToDo,initialToDo}=toDoSlice.actions;
