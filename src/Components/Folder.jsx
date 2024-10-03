@@ -62,7 +62,7 @@ console.log('to do list',toDoList)
 <button onClick={handleToDoList} className='tick2'><i class="fa-solid fa-plus"></i></button>
 
     </div>
-
+<img src="public/assets/bgp.jpg" alt="" className='girl' />
 
 {
     toDoList.length>0?(
@@ -98,7 +98,7 @@ editId===item.id?
 
 
     ):<div><img src="" alt="" className='image'/>
-<p style={{color:'white'}} className='your'>Your List Is Empty!📃</p>
+<p  className='your'>Your List Is Empty!📃</p>
 </div>
 
 }

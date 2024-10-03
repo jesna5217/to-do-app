@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-     <div className="main"  >
-    
+     <div className="main" >
+  
      <Header/>
      <Routes>
       <Route path={'/done'} element={<Done/>}/>

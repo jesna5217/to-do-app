@@ -6,7 +6,10 @@ import '@szhsin/react-menu/dist/transitions/zoom.css';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { deleteAllToDo } from '../Redux/todoSlice';
+
+
 function Header() {
+
    const dispatch=useDispatch()
   return (
 <header>
@@ -17,17 +20,18 @@ function Header() {
       <Link to={'/not'} style={{textDecoration:'none',color:"#113f67"}}><MenuItem>NOT COMPLETED</MenuItem></Link>
 
     </Menu>
-<Link to={'/folder'} style={{textDecoration:'none'}}>
+
+
 <div className='heading'><p>
   TO DO LIST✍️
-    
-    </p></div>
-</Link>
-<div className="d-flex options" style={{backgroundColor:' #424874'}}>
+   </p> 
+</div>
+<div className="d-flex options" >
 <i className='fa-solid fa-trash  delete' style={{color:'rgb(172, 35, 35)'}} onClick={()=>dispatch(deleteAllToDo())}></i>
 <Link to={'/'} style={{textDecoration:'none',color:'#f4eeff'}}><i class="fa-solid fa-house house"></i></Link>
 
 </div>
+
 </header>
   )
 }

@@ -1,4 +1,10 @@
-
+.girl{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    
+}
 .input2{
     width: 800px;
   height: 40px;
@@ -59,7 +65,7 @@ align-items: center;
 
 .your{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 45%;
 }
 .edit{
@@ -86,6 +92,13 @@ align-items: center;
     width: 550px;
 }
 @media only screen and (max-width: 600px){
+    .girl{
+        height: 300px;
+        width: 370px;
+        bottom: 0;
+       left: 3px;
+       right: 0;
+    }
     .edit-input{
         width: 180px;
     }
@@ -148,6 +161,10 @@ align-items: center;
     }
 }
 @media (min-width: 600px) and (max-width: 959px){
+    .girl{
+        height: 400px;
+        left: 25%;
+    }
     .edit-input{
         background: transparent;
         width: 555px;
