@@ -1,33 +1,28 @@
 
-.input-column{
-   width: 100%;
-    height: 70px;
-    position: absolute;
-    bottom: 0;
-  border: 2px solid rgb(51, 80, 130);
-   padding-left: 30px;
-   /* background-color: #38598b;; */
-   background-color: white;
+.input2{
+    width: 800px;
+  height: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding: 30px;
 }
-.input-column::placeholder{
+.tick2{
+    background-color: transparent;
+    margin-left: -50px;
+  font-size: 25px;
+  border: none;
+
+}
+.input2::placeholder{
  
    color: rgb(178, 185, 190);
     font-weight: 500;
     font-size: 17px;
 }
-.tick{
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-    background: transparent;
-    border: none;
-  font-size: 25px;
-    z-index: 200;
-}
-.tick i{
-    color:  #424874;
-   
-}
+
+
 .list{
     height: 70px;
     width: 800px;
@@ -146,6 +141,11 @@ align-items: center;
        
         right: 20%;
     }
+    .input2{
+   
+        margin-left: 20px;
+        width: 90%;
+    }
 }
 @media (min-width: 600px) and (max-width: 959px){
     .edit-input{
@@ -155,11 +155,15 @@ align-items: center;
        border-right:none ;
        border-left:none ;
     }
-    .input-column{
-        width: 100%;
-         height: 50px;
-         
-     }
+    .input2{
+        width: 500px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+        margin-left:10%;
+        margin-top: 30px;
+        padding: 30px;
+    }
      .text-box{
         width: 500px;
      }

@@ -49,9 +49,11 @@ console.log('to do list',toDoList)
 
 <div className="folder-grid w-100 ">
 
-<input type="text" value={input} onChange={(e)=>setInput(e.target.value)}  placeholder='Enter a quick task here' className='input-column'/>
+    <div>
+<input type="text" className='input2' placeholder='Enter a quick task here . . .' value={input} onChange={(e)=>setInput(e.target.value)} />
+<button onClick={handleToDoList} className='tick2'><i class="fa-solid fa-plus"></i></button>
 
-<button className='tick' onClick={handleToDoList}><i class="fa-solid fa-plus"></i></button>
+    </div>
 
 
 {
@@ -64,7 +66,7 @@ console.log('to do list',toDoList)
                <Checkbox {...label} checked={item.completed} color="default"  onClick={()=>dispatch(toggleToDo(item.id))}/>
 {
 editId===item.id?<div>
-<input placeholder='edit' onChange={(e)=>setEditValue(e.target.value)} value={editValue} className='edit-input'/> 
+<input placeholder='' onChange={(e)=>setEditValue(e.target.value)} value={editValue} className='edit-input'/> 
 </div>:
   <div className='text-box'>  <li className='text'>{item.value}</li></div>
 
